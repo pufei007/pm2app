@@ -1,0 +1,33 @@
+{
+  "name": "base",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development TEST=true PORT=3000 node server",
+    "dev:pro": "cross-env NODE_ENV=development PORT=3000 node server",
+    "build": "cross-env TEST=true next build",
+    "build:pro": "next build",
+    "server": "cross-env NODE_ENV=production TEST=true PORT=3000 node server",
+    "server:pro": "cross-env NODE_ENV=production PORT=3000 node server",
+    "deploy": "pm2 deploy development update",
+    "deploy:pro": "pm2 deploy production update",
+    "type-check": "tsc"
+  },
+  "dependencies": {
+    "antd": "^4.0.4",
+    "next": "9.3.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.31",
+    "@types/react": "^16.9.26",
+    "babel-plugin-import": "^1.13.0",
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^1.0.3",
+    "sass": "^1.26.3",
+    "typescript": "^3.8.3",
+    "webpack-spritesmith": "^1.1.0"
+  }
+}
