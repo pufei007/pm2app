@@ -1,2 +1,1 @@
-# pm2app
-pm2 node.js
+基础脚手架
