@@ -26,7 +26,7 @@ module.exports = {
       repo: "git@github.com:pufei007/pm2app.git",
       path: "/app/node-server",
       "post-deploy":
-        "npm install && pm2 reload ecosystem.config.js --env production",
+        "yarn install && yarn build:pro && pm2 reload ecosystem.config.js --env production",
     },
   },
 };
