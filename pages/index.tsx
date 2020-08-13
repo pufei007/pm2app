@@ -1,15 +1,17 @@
-import { Button, DatePicker } from "antd";
-import styles from './index.module.scss'
+import { Button, DatePicker,Space,Alert  } from "antd";
+import styles from "./index.module.scss";
 const Home = () => {
-  return <div className={styles.test}>
-    <p>sdfsdf</p>
-    <span className="ui-icon ui-icon__alipay"></span>
-    <img src="/static/image/chibang.png" alt="" />
-      {/* <img src={require("../assets/chibang.png")} alt=""/> */}
-      <span className="ui-icon ui-icon__alipay"></span>
-      <Button>sfsdfs</Button>
-      <DatePicker/>
-  </div>;
+  return (
+    <div className={styles.test}>
+      <p>home page</p>
+       <Button>sfsdfs</Button>
+      <DatePicker /> 
+      <Space>
+      Space
+    </Space>
+    <Alert message="Success Text" type="success" />
+    </div>
+  );
 };
 
 export default Home;
