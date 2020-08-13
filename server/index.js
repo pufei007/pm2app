@@ -2,7 +2,7 @@ const express = require("express");
 const next = require("next");
 const { createProxyMiddleware } = require("http-proxy-middleware");
 
-const port = parseInt(process.env.PORT, 10) || 3000;
+const port = parseInt(process.env.PORT, 10) || 8800;
 const isTest = process.env.TEST === "true";
 const isPro = process.env.NODE_ENV === "production";
 // 是否是部署环境（部署环境用内网ip）
