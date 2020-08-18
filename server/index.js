@@ -9,9 +9,9 @@ const isPro = process.env.NODE_ENV === "production";
 const isSVR = process.env.SVR === "true";
 const apiUrl = (function() {
   if (isSVR) {
-    return isTest ? "http://10.139.165.126:9050" : "http://10.139.186.177:9050";
+    return isTest ? "http://x.x.x.x:2222" : "http://x.x.x.x:2222";
   } else {
-    return isTest ? "http://test.api.yay.com.cn" : "http://api.yay.com.cn";
+    return isTest ? "http://x.x.x.x:2222" : "http://x.x.x.x:2222";
   }
 })();
 const app = next({
